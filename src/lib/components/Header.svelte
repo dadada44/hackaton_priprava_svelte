@@ -9,15 +9,14 @@
 
     // Navigační odkazy
     let links = [
-      { name: "Domu", href: "/" },
-      { name: "O aplikaci", href: "/" },
-      { name: "Login", href: "/routes" },
+      { name: "Domů", href: "/" },
+      { name: "Login", href: "/login" },
     ];
 </script>
   
 <header>
     <div class="container">
-       <img src="" alt="">
+       <img src="/images/Name.png" style="margin-left: 15px" alt="">
       <!-- Hamburger Button -->
         <button
             class="hamburger"

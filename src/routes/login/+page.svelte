@@ -92,7 +92,7 @@
             width: 100%;
             height: 50px;
             border-radius: 10px;
-            background-color: #4C328A;
+            background-color: #67378C;
             color: white;
             border: none;
             cursor: pointer;

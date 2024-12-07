@@ -1,39 +1,36 @@
-
-<div>
-    <h2><strong>Zapomenuté heslo</strong></h2>
-    <p class = "prvni"><strong>Zadejte svůj e-mail a my vám<br>pošleme odkaz, abyste se mohli<br>dostat zpět ke svému učtu</strong></p>
-        <label>
-            E-mail
-            <input type="email" placeholder="Zadejte email"/>
-        </label>
-        <button type="submit"><strong>Změnit heslo</strong></button>
-        <a href="/login/new-regist" class="druhy">Nová registrace</a>
-
-    <img src="/images/bottom.png" alt="Obrázek" />
+<div class="login">
+    <h1>Zapomenuté heslo</h1>
+    <h2>Zadejte svůj e-mail a my vám pošleme odkaz, abyste se mohli dostat zpět ke svému účtu.</h2>
+    <label class="email">
+        E-mail
+        <input type="email">
+    </label>
+    <button type="submit"><strong>Změnit heslo</strong></button>
+    <div>
+        <a href="/login/new-regist">Nová registrace</a>
+    </div>
 </div>
-
-<style>
-    .prvni{
-        font-size: 14px;
-        text-align: center;
-    }
-    .druhy{
-        text-align: left;
-        font-size: 12px;
-    }
+   <img src="/images/bottom.png" alt="Obrázek" />
+<style lang="scss">
     *{
         font-family: "Outfit";
+    }
+    /*
+
+    p{
+        font-size: 14px;
+        text-align: left;
     }
 
     img {
         display: block;
-        margin: 20px auto;
+        margin: 0;
         max-width: 100%;
     }
 
-    h2 {
+    h1 {
         text-align: center;
-        font-size: 22px;
+        font-size: 25px;
     }
 
     label {
@@ -41,7 +38,16 @@
         margin-bottom: 5px;
         font-weight: bold;
     }
+    .email{
+        width: 300px;
+        height: 70px;
+        top: 209px;
+        left: 45px;
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
 
+    }
     input {
         width: 95%;
         padding: 10px;
@@ -65,5 +71,64 @@
 
     button:hover {
         background-color: #ef9dc3;
+    }*/
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        gap: 14px;
+        margin: auto;
+
+        button{
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #67378C;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        label{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 4px;
+            font-size: 14px;
+            font-weight: 500;
+
+            input{
+                height: 50px;
+                border-radius: 10px;
+                padding: 0 10px;
+                border: 1.5px solid black;
+            }
+        }
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+                transition: ease .3s;
+
+                &:hover{
+                    color: rgb(115, 0, 128);
+                }
+            }
+        }
+    }
+
+    img{
+        width: 100%;
     }
 </style>
