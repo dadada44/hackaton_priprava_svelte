@@ -2,7 +2,6 @@
     // Stav pro toggle mobilního menu
     let isMenuOpen = false;
     $: {
-    // Tento efekt se spustí při každé změně `isMenuOpen`
     if (typeof window !== 'undefined') { // Ujisti se, že kód běží pouze na klientovi
       document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
     }

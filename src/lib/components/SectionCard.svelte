@@ -21,11 +21,15 @@
       max-width: 300px;
     }
     .section-support h2 { 
-      font-size: 1.5em;
+      font-size: 25px;
+      font-family: "Outfit", sans-serif;
+      font-weight: 900;
     }
     .section-support p {
-      font-size: 1em;
+      font-size: 15px;
       color: #666;
+      font-family: "Outfit", sans-serif;
+      font-weight: 900;
     }
   </style>
   

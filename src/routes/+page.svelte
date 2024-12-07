@@ -16,27 +16,18 @@
     <SectionCard img="/images/learn.png" head="Učení a rozvoj">Zdroje, které podporují vzdělání, <br>osobní růst a sebevědomí</SectionCard>
     <SectionCard img="/images/community.png" head="Propojení s komunitou">Zdroje, které propojují rodiny, pečovatele i děti.</SectionCard>
     <SectionCard img="/images/goals.png" head="Společně..">můžeme udělat krok ke světu, kde <br> každý má dítě šanci na šťastný život</SectionCard>
-    <SectionCard img="/images/pani.png" head="Poradce ve vaší kapse..">Náš poradce v aplikaci je tu proto,<br> aby vám poskytl pomoc a podporu kdykoliv ji budete potřebovat. <br>Ať už máte otázky, potřebujete radu, <br> nebo jen někoho, kdo vám porozumí, <br> poradce je spolehlivý průvodce na vaší cestě.</SectionCard>
+    <SectionCard img="/images/pani.png" head="Poradce ve vaší kapse">Náš poradce v aplikaci je tu proto,<br> aby vám poskytl pomoc a podporu <br>kdykoliv ji budete potřebovat.</SectionCard>
   </div>
 
   <div class="colum">
     <div class="text-colum">
       <p>Podpora, kterou si zasloužíš. <br> Budoucnost, kterou můžeš tvořit.</p>
-      <a href="/login"><ButtnSVG class="tlacitko">Začít</ButtnSVG></a>
+      <a href="/login"><ButtnSVG class="tlacitko">DOMUS</ButtnSVG></a>
     </div>
     <div class="img-colum">
       <img src="/images/4section.png" alt="">
     </div>
   </div>
-
-
-<div class="container">
-  <ButtnSVG>
-    <img src="/images/facebook.png" alt="Facebook" />
-    <img src="/images/youtube.png" alt="YouTube" />
-    <img src="/images/instagram.png" alt="Instagram" />
-    </ButtnSVG>
-</div>
 
 <div class="footer">
   <p>Foster app <br> TechTower, 301 00 Plzeň <br>
@@ -50,23 +41,19 @@
   <style>
     .colum{
       display: flex;
-      justify-content: space-evenly;
-      padding-right: 45px;
-      padding-left: 45px;
+      padding-left: 25px;
       padding-bottom: 20px;
+      gap: 10px;
+      padding-top: 35px;
     }
 
     .text-colum p{
       font-weight: bold;
       color: #333;
       font-family: Outfit;
-      font-family: Outfit;
-      font-size: 15px;
+      font-size: 12px;
       font-weight: 900;
-    }
-
-    .img-colum{
-      width: 300px;
+      padding-bottom: 25px;
     }
 
     a{
@@ -103,13 +90,7 @@
         font-size: 16px;
     }
   
-    p {
-      font-family: "Outfit", sans-serif;
-      font-weight: 900;
-      font-size: 10px;
-      color: #686868;
-      margin-left: 20px;
-    }
+   
     .social-media {
     display: flex;
     justify-content: center;
@@ -133,12 +114,13 @@
   .footer p {
     color: white;
     font-family: Outfit;
-    font-size: 6px;
-    font-weight: 900;
+    font-size: 10px;
+    font-weight: 500;
     line-height: 7.56px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    line-height: 15px;
   }
   .footer a {
     color: white;
