@@ -1,24 +1,26 @@
-<div class= "prvni">
+<div class="login">
     <h1>LOGIN</h1>
-        <label class="email">
-            E-mail
-            <input type="email" placeholder="Zadejte email"/>
-        </label>
-        <label>
-            Heslo
-            <input type="password" placeholder="Zadejte heslo" />
-        </label>
-        <button type="submit"><strong>Přihlásit se</strong></button>
+    <label class="email">
+        E-mail
+        <input type="email">
+    </label>
+    <label>
+        Heslo
+        <input type="password">
+    </label>
+    <button type="submit"><strong>Přihlásit se</strong></button>
+    <div>
         <a href="/login/new-regist">Nová registrace</a>
         <a href="/login/reset-password">Zapomenuté heslo</a>
-
-    <img src="/images/bottom.png" alt="Obrázek" />
+    </div>
 </div>
-
-<style>
+   <img src="/images/bottom.png" alt="Obrázek" />
+<style lang="scss">
     *{
         font-family: "Outfit";
     }
+    /*
+
     p{
         font-size: 14px;
         text-align: left;
@@ -73,5 +75,64 @@
 
     button:hover {
         background-color: #ef9dc3;
+    }*/
+    .login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        gap: 14px;
+        margin: auto;
+
+        button{
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #4C328A;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        label{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 4px;
+            font-size: 14px;
+            font-weight: 500;
+
+            input{
+                height: 50px;
+                border-radius: 10px;
+                padding: 0 10px;
+                border: 1.5px solid black;
+            }
+        }
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+                transition: ease .3s;
+
+                &:hover{
+                    color: rgb(115, 0, 128);
+                }
+            }
+        }
+    }
+
+    img{
+        width: 100%;
     }
 </style>
