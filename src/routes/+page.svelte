@@ -1,4 +1,5 @@
 <script>
+	import SectionCard from './../lib/components/SectionCard.svelte';
 	import ButtnSVG from './../lib/components/ButtnSVG.svelte';
 </script>
 
@@ -11,42 +12,30 @@
   </div>
   
   <div class="sections">
-    <div class="section-support">
-      <img src='/images/support.png' alt="" />
-      <h2>Podpora na každém kroku</h2>
-      <p>Nástroje, které pomáhají dětem lépe zvládat každodenní situace.</p>
+    <SectionCard img="/images/support.png" head="Podpora na každém kroku">Nástroje, které pomáhají dětem lépe <br> zvládat každodenní situace</SectionCard>
+    <SectionCard img="/images/learn.png" head="Učení a rozvoj">Zdroje, které podporují vzdělání, <br>osobní růst a sebevědomí</SectionCard>
+    <SectionCard img="/images/community.png" head="Propojení s komunitou">Zdroje, které propojují rodiny, pečovatele i děti.</SectionCard>
+    <SectionCard img="/images/goals.png" head="Společně..">můžeme udělat krok ke světu, kde <br> každý má dítě šanci na šťastný život</SectionCard>
+    <SectionCard img="/images/pani.png" head="Poradce ve vaší kapse..">Náš poradce v aplikaci je tu proto,<br> aby vám poskytl pomoc a podporu kdykoliv ji budete potřebovat. <br>Ať už máte otázky, potřebujete radu, <br> nebo jen někoho, kdo vám porozumí, <br> poradce je spolehlivý průvodce na vaší cestě.</SectionCard>
+  </div>
+
+  <div class="colum">
+    <div class="text-colum">
+      <p>Podpora, kterou si zasloužíš. <br> Budoucnost, kterou můžeš tvořit.</p>
+      <a href="/login"><ButtnSVG class="tlacitko">Začít</ButtnSVG></a>
     </div>
-    <div class="section-learn">
-      <img src='/images/learn.png' alt="" />
-      <h2>Učení a rozvoj</h2>
-      <p>Zdroje, které podporují vzdělání, <br>osobní růst a sebevědomí.</p>
-    </div>
-    <div class="section-community">
-      <img src='/images/community.png' alt="" />
-      <h2>Propojení s komunitou</h2>
-      <p>Zdroje, které propojují rodiny, pečovatele i děti.</p>
-    </div>
-    <div class="section-goals">
-      <img src='/images/goals.png' alt="" />
-      <h2>Společně můžeme udělat krok ke světu, kde každý má dítě šanci na šťastný život.</h2>
-    </div>
-    <div class="section-pani">
-      <img src='/images/pani.png' alt="" />
-      <h2>Poradce ve vaší kapse</h2>
-      <p>Náš poradce v aplikaci je tu proto, aby vám poskytl pomoc a podporu kdykoliv ji budete potřebovat. Ať už máte otázky, potřebujete radu, nebo jen někoho, kdo vám porozumí, poradce je spolehlivý průvodce na vaší cestě.</p>
+    <div class="img-colum">
+      <img src="/images/4section.png" alt="">
     </div>
   </div>
 
+
 <div class="container">
-  <p>Podpora, kterou si zasloužíš. Budoucnost, kterou můžeš tvořit.</p>
-  <div class="social-media">
-    <p>Jsme na sociálních médiích:</p>
-    <ButtnSVG>
-      <img src="/images/facebook.png" alt="Facebook" />
-      <img src="/images/youtube.png" alt="YouTube" />
-      <img src="/images/instagram.png" alt="Instagram" />
+  <ButtnSVG>
+    <img src="/images/facebook.png" alt="Facebook" />
+    <img src="/images/youtube.png" alt="YouTube" />
+    <img src="/images/instagram.png" alt="Instagram" />
     </ButtnSVG>
-  </div>
 </div>
 
 <div class="footer">
@@ -59,6 +48,26 @@
 </div>
   
   <style>
+    .colum{
+      display: flex;
+      justify-content: space-evenly;
+      padding-right: 45px;
+      padding-left: 45px;
+      padding-bottom: 20px;
+    }
+
+    .text-colum p{
+      font-weight: bold;
+      color: #333;
+      font-family: Outfit;
+      font-family: Outfit;
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .img-colum{
+      width: 300px;
+    }
 
     a{
       text-decoration: none;
@@ -67,50 +76,13 @@
     .sections{
       background-image: url('/images/backgroud.png');
     }
-
-    .section-support{
-      margin: 35px;
-      width:50vw;
-      float: right;
-      text-align: right;
-    }
-    .section-learn{
-      margin: 35px;
-    }
-    .section-community{
-      margin: 35px;
-      width:50vw;
-      float: right;
-      text-align: right;
-    }
-
-    .section-goals{
-      padding: 20px;
-      text-align: center;
-    }
-
-    .section-pani{
-      padding: 20px;
-      text-align: center;
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 18px;
-    }
-  
-    .menu-icon {
-      width: 30px;
-      height: 30px;
-      background: white;
-      border-radius: 50%;
-    }
     
     /* Hero Section */
     .hero {
       text-align: center;
       padding: 40px 20px;
       background-color: #fdf3f7;
+      
     }
 
     .hero img {
@@ -129,19 +101,6 @@
         font-family: "Outfit", sans-serif;
         font-weight: 900;
         font-size: 16px;
-    }
-
-  
-    img {
-      width: 100%;
-      max-width: 150px;
-    }
-  
-    h2 {
-      font-family: "Outfit", sans-serif;
-      font-weight: 900;
-      font-size: 14px;
-      margin-left: 20px;
     }
   
     p {
