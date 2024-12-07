@@ -2,9 +2,11 @@
     // Stav pro toggle mobilního menu
     let isMenuOpen = false;
     $: {
-    // Blokování scrollu při otevřeném menu
-    document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
+    // Tento efekt se spustí při každé změně `isMenuOpen`
+    if (typeof window !== 'undefined') { // Ujisti se, že kód běží pouze na klientovi
+      document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
     }
+  }
 
     // Navigační odkazy
     let links = [
@@ -17,8 +19,7 @@
   
 <header>
     <div class="container">
-        <img src="/img/logo.png" alt="">
-  
+        <img src="" alt="">
       <!-- Hamburger Button -->
         <button
             class="hamburger"
@@ -124,7 +125,6 @@
             transform: scale(1);
             pointer-events: all;
             background-color: #bc90c0;
-            
         }
 
         .menu {
