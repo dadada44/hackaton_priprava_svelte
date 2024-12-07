@@ -10,10 +10,9 @@
 
     // Navigační odkazy
     let links = [
-      { name: "Home", href: "/" },
-      { name: "About", href: "/about" },
-      { name: "Services", href: "/services" },
-      { name: "Contact", href: "/contact" },
+      { name: "Domu", href: "/" },
+      { name: "O aplikaci", href: "/" },
+      { name: "Login", href: "/routes" },
     ];
 </script>
   
@@ -78,6 +77,7 @@
     cursor: pointer;
     position: relative;
     z-index: 50;
+    margin-right: 35px;
 
         .line {
             width: 30px;
@@ -88,7 +88,7 @@
 
             &.top.isOpen {
             transform: translateY(9px) rotate(90deg);
-            background-color: #ff88df;
+            background-color: #fddcff;
             }
 
             &.middle.isOpen {
@@ -122,7 +122,7 @@
             opacity: 1;
             transform: scale(1);
             pointer-events: all;
-            background-color: #bc90c0;
+            background-color: #bc91c0;
         }
 
         .menu {
