@@ -24,7 +24,9 @@
     <img src="/images/hero.png" alt="Hero Image" />
     <h1>FOSTER APP</h1>
     <p>Domov v srdci, pomoc na dosah.</p>
+    <div class="tlacitko">
     <ButtnSVG class="tlacitko">Začít</ButtnSVG>
+    </div>
   </div>
   
   <div class="sections">
@@ -38,6 +40,8 @@
   </div>
   
   <style>
+    
+
     .logo {
       font-weight: bold;
       font-size: 18px;
@@ -75,17 +79,6 @@
         font-size: 16px;
     }
   
-    .cta-button {
-      background: linear-gradient(135deg, #8e44ad, #ec6ead);
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 25px;
-      cursor: pointer;
-    }
-  
     /* Sections */
     .sections {
       padding: 20px;
@@ -103,12 +96,15 @@
     }
   
     .section h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
+        font-family: "Outfit", sans-serif;
+        font-weight: 900;
+        font-size: 14px;
     }
   
     .section p {
-      font-size: 14px;
-      color: #555;
+      font-family: "Outfit", sans-serif;
+      font-weight: 900;
+      font-size: 10px;
+      color: #686868;
     }
   </style>

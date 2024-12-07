@@ -19,7 +19,7 @@
   
 <header>
     <div class="container">
-        <img src="" alt="">
+       <img src="" alt="">
       <!-- Hamburger Button -->
         <button
             class="hamburger"
@@ -42,7 +42,7 @@
         </div>
     </div>
 </header>
-  
+
 <style lang="scss">
     header {
     height: 100px;
@@ -58,15 +58,13 @@
             height: 100px;
             align-items: center;
 
-            .logo {
+            .img{
             height: 100%;
             display: flex;
             justify-content: center;
             align-content: center;
 
-                img {
-                    width: 100px;
-                }
+            
             }
         }
     }
