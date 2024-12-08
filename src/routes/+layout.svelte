@@ -38,6 +38,7 @@
       padding: 0;
       overflow: visible;
       font-family: Arial, sans-serif;
+      box-sizing: border-box;
   }
 
   main {

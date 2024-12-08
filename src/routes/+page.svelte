@@ -109,6 +109,7 @@
     color: white;
     padding: 20px;
     text-align: left;
+    border-top: 6px solid #E44F95;
   }
 
   .footer p {

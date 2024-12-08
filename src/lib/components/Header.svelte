@@ -11,6 +11,7 @@
     let links = [
       { name: "Domů", href: "/" },
       { name: "Login", href: "/login" },
+      { name: "Profil", href: "/login/profil" },
     ];
 </script>
   
@@ -121,6 +122,7 @@
             transform: scale(1);
             pointer-events: all;
             background-color: #bc91c0;
+            z-index: 10;
         }
 
         .menu {
