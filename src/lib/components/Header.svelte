@@ -17,7 +17,8 @@
   
 <header>
     <div class="container">
-       <img src="/images/Name.png" style="margin-left: 15px" alt="">
+         <img src="/images/Name.png" style="margin-left: 15px" alt="">
+
       <!-- Hamburger Button -->
         <button
             class="hamburger"
